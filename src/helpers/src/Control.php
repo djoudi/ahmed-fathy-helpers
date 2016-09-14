@@ -56,7 +56,7 @@ class Control
 
       return view($view,$compact);
     }else{
-      return view('functions.main_error404');
+      return view('Helper::main_error404');
     }
   }
 
@@ -75,7 +75,7 @@ class Control
       
       return view($view,$compact);
     }else{
-      return view('functions.main_error404');
+      return view('Helper::main_error404');
     }
   }
    public static function store(Request $request ,$name,$data=[],$redirect=null,$calback=null)
@@ -284,7 +284,7 @@ public static function order($req,$name,$parent=0)
     $rows = $model::where($parentName,$parent)->where('position',$position)->orderBy('order','asc')->get();
       
     }
-    return view('functions.order',compact('rows','name','parentName','parent'))->render();
+    return view('Helper::order',compact('rows','name','parentName','parent'))->render();
   }
 
   public static function mainOrderHtml($name,$parentName,$parent = 0,$position=null)
@@ -295,7 +295,7 @@ public static function order($req,$name,$parent=0)
     {
     $rows = $model::where($parentName,$parent)->where('position',$position)->orderBy('order','asc')->get();
     }
-    return view('functions.main_order',compact('rows','name','parentName','parent','position'))->render();
+    return view('Helper::main_order',compact('rows','name','parentName','parent','position'))->render();
   }
 
 }
