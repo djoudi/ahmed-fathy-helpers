@@ -10,7 +10,7 @@
              {!! Btn::delete($row->id,@$row->page->trans('name')) !!}
         </div>
         </div>
-        {!! \Magic::orderHtml($name,$parentName,$row->id) !!}
+        {!! \Control::orderHtml($name,$parentName,$row->id) !!}
     </li>
     @endforeach 
 </ol>
