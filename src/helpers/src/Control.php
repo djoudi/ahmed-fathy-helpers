@@ -42,6 +42,8 @@ class Control
 
   public static function show($name , $id , $view = null , $compact = [])
   {
+    \Notfication::see($name,$id);
+    \Notfication::read($name,$id);
     if (is_null($view)) 
     {
       $view = user('rule').'_rule.'.strtolower(str_plural($name)).'.show';
@@ -133,7 +135,7 @@ class Control
         {
         \Files::upload($request,$name,$id,$data['files']);
         }
-
+        \Notfication::set('user',user('id'),$name,$id);
         session()->flash('success',trans('lang.added',['var'=>trans('lang.'.$name)]));
        if (is_callable($calback)) 
         {
@@ -296,6 +298,10 @@ public static function order($req,$name,$parent=0)
     $rows = $model::where($parentName,$parent)->where('position',$position)->orderBy('order','asc')->get();
     }
     return view('Helper::main_order',compact('rows','name','parentName','parent','position'))->render();
+  }
+  public static function comments($extends,$name)
+  {
+    return view('Helper::comments',compact('extends','name'))->render();
   }
 
 }
