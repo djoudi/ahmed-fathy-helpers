@@ -35,7 +35,7 @@
             @if ($row->page->active == 1)
 
                     <li><a href="{{ $url }}">{{ $row->page->trans('name') }}</a>
-                        {!! \Magic::mainOrderHtml($name,$parentName,$row->id,$position) !!}
+                        {!! \Control::mainOrderHtml($name,$parentName,$row->id,$position) !!}
                     </li>
             @endif
         @endforeach 
