@@ -26,24 +26,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         {!! Html::style('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all') !!}
-        {!! Html::style($cpanel.'css/font-awesome.min.css') !!}
-        {!! Html::style($cpanel.'css/simple-line-icons.min.css') !!}
-        {!! Html::style($cpanel.'css/bootstrap'.getDir(true).'.min.css') !!}
-        {!! Html::style($cpanel.'css/uniform.default.min.css') !!}
-        {!! Html::style($cpanel.'css/bootstrap-switch'.getDir(true).'.min.css') !!}
-        <!-- END GLOBAL MANDATORY STYLES -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        {!! Html::style($cpanel.'css/daterangepicker.min.css') !!}
-        {!! Html::style($cpanel.'css/morris.css') !!}
-        {!! Html::style($cpanel.'css/fullcalendar.min.css') !!}
-        {!! Html::style($cpanel.'css/jqvmap.css') !!}
-        <!-- END PAGE LEVEL PLUGINS -->
-        <!-- BEGIN THEME GLOBAL STYLES -->
-        {!! Html::style($cpanel.'css/components'.getDir(true).'.min.css') !!}
-        {!! Html::style($cpanel.'css/plugins'.getDir(true).'.min.css') !!}
-        <!-- END THEME GLOBAL STYLES -->
-        {!! Html::style($cpanel.'css/coming-soon'.getDir(true).'.min.css') !!}
-        {!! Html::style($cpanel.'css/my-style.css') !!}
+
+        {!! Html::style($cpanel.'css/style-'.getDir().'.css') !!}
+        
         <!-- END PAGE LEVEL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <!-- END THEME LAYOUT STYLES -->
@@ -103,27 +88,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
             </div>
         </div>
-         <!--[if lt IE 9]>
-        {!! Html::script($cpanel.'/js/respond.min.js') !!}
-        {!! Html::script($cpanel.'/js/excanvas.min.js') !!}
-<![endif]-->
-        <!-- BEGIN CORE PLUGINS -->
-        {!! Html::script($cpanel.'/js/jquery.min.js') !!}
-        {!! Html::script($cpanel.'/js/bootstrap.min.js') !!}
-        {!! Html::script($cpanel.'/js/js.cookie.min.js') !!}
-        {!! Html::script($cpanel.'/js/jquery.slimscroll.min.js') !!}
-        {!! Html::script($cpanel.'/js/jquery.blockui.min.js') !!}
-        {!! Html::script($cpanel.'/js/jquery.uniform.min.js') !!}
-        {!! Html::script($cpanel.'/js/bootstrap-switch.min.js') !!}
-        <!-- END CORE PLUGINS -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        {!! Html::script($cpanel.'/js/jquery.validate.min.js') !!}
-        {!! Html::script($cpanel.'/js/additional-methods.min.js') !!}
-        {!! Html::script($cpanel.'/js/select2.full.min.js') !!}
-        {!! Html::script($cpanel.'/js/jquery.backstretch.min.js') !!}
-        <!-- END PAGE LEVEL PLUGINS -->
-        <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        {!! Html::script($cpanel.'/js/app.min.js') !!}
+   
+        {!! Html::script($cpanel.'/js/script.js') !!}
         <script>
 var ComingSoon = function () {
 
