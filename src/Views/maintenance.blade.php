@@ -47,7 +47,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <div class="col-md-6 coming-soon-content">
                     <h1>{{ trans('lang.site_maintenance_sorry') }}</h1>
                     <p> {{trans('lang.site_maintenance_msg')}}</p>
-                    <br>
+ 
                 </div>
 
             </div>
@@ -77,6 +77,8 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
         </div>
    
+        {!! Html::script($cpanel.'/js/script.js') !!}
+        
     </body>
 
 </html>
