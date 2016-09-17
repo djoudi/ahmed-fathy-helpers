@@ -2,6 +2,6 @@
 namespace AhmedFathy\Helpers\Relation;
 trait RelationMethods{
 
-use LanguagesRelation,ImageRelation;
+use LanguagesRelation,deleteWithAttachments;
  
 }
