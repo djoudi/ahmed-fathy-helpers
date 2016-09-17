@@ -93,7 +93,7 @@ class MainController extends Controller
            return redirect('/');
         }else{
             
-            return view('Helpers::maintenance');
+            return view('Helper::maintenance');
         }
     }
     
